@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>my titile</title>  
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="submit.css">
+  <link rel="stylesheet" type="text/css" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+  <script>
+    (function() {
+  'use strict';
+  window.addEventListener('load', function() {
+    // Fetch all the forms we want to apply custom Bootstrap validation styles to
+    var forms = document.getElementsByClassName('needs-validation');
+    // Loop over them and prevent submission
+    var validation = Array.prototype.filter.call(forms, function(form) {
+      form.addEventListener('submit', function(event) {
+        if (form.checkValidity() === false) {
+          event.preventDefault();
+          event.stopPropagation();
+        }
+        form.classList.add('was-validated');
+      }, false);
+    });
+  }, false);
+})();
+  </script>
+</head>
+<body>
+  <div class="banner1">
+  <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top" >
+    <a class="navbar-brand" href="#">
+      <img src="images/logo.png" style="height: 3rem;"></a>
+   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNav">
+    <ul class="navbar-nav ml-auto">
+      <li class="nav-item active">
+        <a class="nav-link" href="index.html">Home</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="studentervices.html">Student Service</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="submit.html">About</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="blog.html">Blog</a>
+      </li>
+       <li class="nav-item dropdown">
+        <a class="nav-link" href="carousel.html" >
+          Popular Courses
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+          <a class="dropdown-item" href="file:///C:/Users/admin/Desktop/project/project/carousel.html" id="navbarDropdownMenuLink">Action</a>
+          <a class="dropdown-item" href="file:///C:/Users/admin/Desktop/project/project/carousel.html" id="navbarDropdownMenuLink">Another action</a>
+          <a class="dropdown-item" href="file:///C:/Users/admin/Desktop/project/project/carousel.html" id="navbarDropdownMenuLink">Something else</a>
+        </div>
+</nav>
+<div class="container">
+<form class="needs-validation" novalidate>
+  <div class="form-group">
+    <label for="name">Name*</label>
+    <input type="text" class="form-control" id="name" placeholder="Your name" required>
+    <div class="valid-tooltip">
+      Looks good!
+    </div>
+    <div class="invalid-tooltip">
+      Please add a name.
+    </div>
+  </div>
+ 
+  <div class="form-group">
+    <label for="telephone">Telephone*</label>
+    <input type="number" class="form-control" id="telephone" placeholder="Your telephone number" required minlength="7" maxlength="12">
+    <div class="valid-tooltip">
+      Looks good!
+    </div>
+    <div class="invalid-tooltip">
+      Please choose a valid telephone number (between 7 and 10 characters).
+    </div>
+  </div>
+ 
+  <div class="form-group">
+    <label for="address">Address</label>
+    <input type="text" class="form-control" id="address" placeholder="Your current address" required>
+    <div class="valid-tooltip">
+      Looks good!
+    </div>
+    <div class="invalid-tooltip">
+      Please add an address.
+    </div>
+  </div>
+  <div class="form-group">
+    <label for="address">Country</label>
+    <input type="text" class="form-control" id="address" placeholder="Country you want to go" required>
+    <div class="valid-tooltip">
+      Looks good!
+    </div>
+    <div class="invalid-tooltip">
+      Please add an country.
+    </div>
+  </div>
+  
+  <div class="form-group">
+    <select class="custom-select" required>
+      <option value="">Select a course*</option>
+      <option value="1">Enginering</option>
+      <option value="2">Arts</option>
+      <option value="3">Health</option>
+    </select>
+    <div class="valid-tooltip">
+      Looks good!
+    </div>
+    <div class="invalid-tooltip">
+      Please choose a menu.
+    </div>
+  </div>
+ 
+  <div class="form-group">
+    <label>Do you want to book Classes?</label>
+    <div class="custom-control custom-radio">
+        <input type="radio" id="yes" name="cutlery" class="custom-control-input" required>
+        <label class="custom-control-label" for="yes">Yes</label>
+    </div>
+    <div class="custom-control custom-radio">
+        <input type="radio" id="no" name="cutlery" class="custom-control-input" required>
+        <label class="custom-control-label" for="no">No</label>
+        <div class="valid-tooltip">
+              Looks good!
+        </div>
+        <div class="invalid-tooltip">
+              Please specify if you need.
+        </div>
+    </div>
+  </div>
+  <button type="submit" class="btn btn-info">Submit</button>
+</form>
+</div>
+</div>
+<footer class="page-footer font-small stylish-color-dark pt-4">
+
+  <!-- Footer Links -->
+  <div class="container text-center text-md-left">
+
+    <!-- Grid row -->
+    <div class="row">
+
+      <!-- Grid column -->
+      <div class="col-md-4 mx-auto">
+
+        <!-- Content -->
+        <h2 class="font-weight-bold text-uppercase mt-3 mb-4">Connect with us</h2>
+        <p>Get in touch with us today</p>
+
+      </div>
+      <!-- Grid column -->
+
+      <hr class="clearfix w-100 d-md-none">
+
+      <!-- Grid column -->
+      <div class="col-md-2 mx-auto">
+
+        <!-- Links -->
+        <h5 class="font-weight-bold text-uppercase mt-3 mb-4">About us</h5>
+
+        <ul class="list-unstyled">
+          <li>
+            <a href="#!">About</a>
+          </li>
+          <li>
+            <a href="#!">Contact us</a>
+          </li>
+          <li>
+        </ul>
+
+      </div>
+      <!-- Grid column -->
+
+      <hr class="clearfix w-100 d-md-none">
+
+      <!-- Grid column -->
+      <div class="col-md-2 mx-auto">
+
+        <!-- Links -->
+        <h5 class="font-weight-bold text-uppercase mt-3 mb-4">Courses</h5>
+
+        <ul class="list-unstyled">
+          <li>
+            <a href="#!">Popular Courses</a>
+          </li>
+          <li>
+            <a href="#!">Article</a>
+          </li>
+          <li>
+        </ul>
+
+      </div>
+      <!-- Grid column -->
+
+      <hr class="clearfix w-100 d-md-none">
+
+      <!-- Grid column -->
+      <div class="col-md-2 mx-auto">
+
+        <!-- Links -->
+        <h5 class="font-weight-bold text-uppercase mt-3 mb-4">Services</h5>
+
+        <ul class="list-unstyled">
+          <li>
+            <a href="#!">Student Services</a>
+          </li>
+          <li>
+            <a href="#!">Enquiry</a>
+          </li>
+          <li>
+
+      </div>
+      <!-- Grid column -->
+
+    </div>
+    <!-- Grid row -->
+
+  </div>
+  <!-- Footer Links -->
+
+  <hr>
+
+  <!-- Call to action -->
+  <ul class="list-unstyled list-inline text-center py-2">
+    <li class="list-inline-item">
+      <h5 class="mb-1">Connect with us now!</h5>
+    </li>
+    <li class="list-inline-item">
+      <a href="#!" class="btn btn-danger btn-rounded">Enquiry Now!</a>
+    </li>
+  </ul>
+  <!-- Call to action -->
+
+  <hr>
+
+  <!-- Social buttons -->
+  <ul class="list-unstyled list-inline text-center">
+    <li class="list-inline-item">
+      <a class="btn-floating btn-fb mx-1">
+        <i class="fab fa-facebook-f"> </i>
+      </a>
+    </li>
+    <li class="list-inline-item">
+      <a class="btn-floating btn-tw mx-1">
+        <i class="fab fa-twitter"> </i>
+      </a>
+    </li>
+    <li class="list-inline-item">
+      <a class="btn-floating btn-gplus mx-1">
+        <i class="fab fa-google-plus-g"> </i>
+      </a>
+    </li>
+    <li class="list-inline-item">
+      <a class="btn-floating btn-li mx-1">
+        <i class="fab fa-linkedin-in"> </i>
+      </a>
+    </li>
+    <li class="list-inline-item">
+      <a class="btn-floating btn-dribbble mx-1">
+        <i class="fab fa-dribbble"> </i>
+      </a>
+    </li>
+  </ul>
+  <!-- Social buttons -->
+
+  <!-- Copyright -->
+  <div class="footer-copyright text-center">© 2019 Copyright:
+    <a href="#"> consultancy.com</a>
+  </div>
+  <!-- Copyright -->
+
+</footer>
+<!-- Footer -->
+  
+</body>
+</html>

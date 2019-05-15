@@ -1,0 +1,36 @@
+@import url('https://fonts.googleapis.com/css?family=Lato:400,700');
+body{
+	font-family: 'Lato', sans-serif;
+}
+.container {
+  padding: 6rem ;
+}
+
+h4 {
+  margin: 2rem 0rem 1rem;
+}
+.form-group {
+  position: relative;
+}
+  nav{
+	text-transform: uppercase;
+	font-weight: 700;
+	font-size: 0.9rem;
+	letter-spacing: .1rem;
+	background: rgba(0,0,0,.6);
+
+
+}
+.banner1{
+	background:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url('images/contactform.jpg');
+	width: 100%;
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+label{
+	color: white;
+}
+.btn-info button{
+	color: blue;
+}

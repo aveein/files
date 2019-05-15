@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css?family=Lato:400,700');
+body{
+	font-family: 'Lato', sans-serif!important;
+}
+.banner .carousel-inner .item{
+	height: 100vh;
+}
+.carousel-caption{
+	color: white;
+	margin-bottom: 300px; 
+}
+.carousel-caption h2{
+	font-size: 50px;
+	text-transform: uppercase;
+}
+.carousel-control.right{
+	background-image: none;
+}/*
+.carousel-caption{
+	padding-top: 12em;
+	padding-bottom: 2em;
+	color: white;
+}*/
+
+.banner{
+	width: 100%;
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+.row{
+	margin-top: 5rem;
+}
+.student{
+	margin: 50px;
+}
+h1{
+	text-align: center;
+	font-weight: bold;
+	color: black;
+	padding-bottom: 1em;
+	text-transform: uppercase;
+
+}
+.student h1::after{
+	content: '';
+	background: #007bff;
+	display: block;
+	height: 0.1em;
+	width: 3em;
+	margin: 0.1em auto 0.2em;
+}
+.student .row{
+	margin-top: 2em;	
+}
+.student .col-md-4{
+	margin: 3em auto;
+}
+.profile{
+	padding: 70px 10px 10px;
+	background-color: #efefef: 
+}
+
+.profile img{
+	top: -60px;
+	position: absolute;
+	left: calc(50% - 60px);
+	border: 10px solid white;
+}
+.user{
+	width: 120px;
+	height: 120px;
+	border-radius: 50%;
+}
+.profile h3{
+	font-size: 20px;
+	margin-top: 1em;
+	color: #007bff
+}
+span{
+	font-size:16px;
+	line-height: 2em;
+}
+ .cards {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: stretch;
+  }
+  .card {
+    flex: 0 0 227px;
+    margin: 25px;
+    border: 1px solid #ccc;
+    box-shadow: 2px 2px 6px 0px  rgba(0,0,0,0.3);
+  } 
+  .card img {
+    max-width: 100%;
+  }
+  .card .text {
+    padding: 20px 20px 53px;
+  }
+  .card .text > button {
+    background: gray;
+    border: 0;
+    color: white;
+    padding: 10px;
+    width: 60%;
+    position: absolute;
+    bottom: 9px;
+    margin-left: 24px;
+
+    }
+  nav{
+	text-transform: uppercase;
+	font-weight: 700;
+	font-size: 0.9rem;
+	letter-spacing: .1rem;
+	background: rgba(0,0,0,.6);
+
+
+}
+

@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="popularcourses.css">
+  <link rel="stylesheet" type="text/css" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+  <link href="https://fonts.googleapis.com/css?family=Jacques+Francois" rel="stylesheet">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+  <style>
+  /* Make the image fully responsive */
+  .carousel-inner img {
+      width: 100%;
+      height: 100%;
+  }
+  </style>
+</head>
+<body>
+<div class="banner">
+  <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+  <a class="navbar-brand" href="#">
+    <img src="images/logo.png" style="height: 3rem;">
+  </a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNav">
+    <ul class="navbar-nav ml-auto">
+      <li class="nav-item active">
+        <a class="nav-link" href="index.html">Home</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="studentervices.html">Student Service</a>
+      </li>
+
+      <li class="nav-item">
+        <a class="nav-link" href="submit.html">About</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="blog.html">Blog</a>
+      </li>
+       <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="carousel.html" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Popular Courses
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+          <a class="dropdown-item" href="file:///C:/Users/admin/Desktop/project/project/carousel.html" id="navbarDropdownMenuLink">Science</a>
+          <a class="dropdown-item" href="file:///C:/Users/admin/Desktop/project/project/carousel.html" id="navbarDropdownMenuLink">Non-Science</a>
+          <a class="dropdown-item" href="file:///C:/Users/admin/Desktop/project/project/carousel.html" id="navbarDropdownMenuLink">Arts</a>
+        </div>
+      </li>
+    </ul>
+  </div>
+</nav>
+<div id="demo" class="carousel slide" data-ride="carousel">
+
+  <!-- Indicators -->
+  <ul class="carousel-indicators">
+    <li data-target="#demo" data-slide-to="0" class="active"></li>
+    <li data-target="#demo" data-slide-to="1"></li>
+    <li data-target="#demo" data-slide-to="2"></li>
+  </ul>
+  
+  <!-- The slideshow -->
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="images/courses.jpg" alt="Los Angeles" width="1100" height="400">
+      <div class="carousel-caption">
+        <h2>Welcome</h2>
+        <h3>Lorem ipsum dolor sit amet, consectetur adipisicing.</h3>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <img src="images/course4.jpg" alt="Chicago" width="1100" height="400">
+      <div class="carousel-caption text-center">
+        <h2>Welcome</h2>
+        <h3>Lorem ipsum dolor sit amet, consectetur adipisicing.</h3>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <img src="images/course5.jpg" alt="New York" width="1100" height="400">
+      <div class="carousel-caption">
+        <h2>Welcome</h2>
+        <h3>Lorem ipsum dolor sit amet, consectetur adipisicing.</h3>
+      </div>
+    </div>
+  </div>
+  
+  <!-- Left and right controls -->
+  <a class="carousel-control-prev" href="#demo" data-slide="prev">
+    <span class="carousel-control-prev-icon"></span>
+  </a>
+  <a class="carousel-control-next" href="#demo" data-slide="next">
+    <span class="carousel-control-next-icon"></span>
+  </a>
+</div>
+</div>
+<div class="container">
+  <div class="row">
+    <div class="col-md-12 text-center">
+      <h1>Where do you want to go?</h1>
+          <p>We’ve placed thousands of students over a vast range of courses in countries</p>
+          <p>that welcome and support international students, so all you have to do is decide what you want to study.</p>
+          <p>Not sure where to start? Why not read about our most popular courses for inspiration?</p>
+    </div>
+  </div>
+  
+</div>
+      <div class="container">
+           <main class="cards">
+  <article class="card">
+    <img src="images/food.jpg" alt="Sample photo">
+    <div class="text">
+      <h3>Food, Hospitality and Personal Services</h3>
+      <p>With a career in hospitality, you could find yourself in any corner of the globe working anywhere from secluded luxury resorts, to first-rate city restaurants</p>
+      <button>Find out more</button>
+    </div>
+  </article>
+  <article class="card">
+    <img src="images/health.jpg" alt="Sample photo">
+    <div class="text">
+      <h3>Health and Allied Health</h3>
+      <p>Care for others, and enjoy giving back with a career in health capital without superior collaboration and idea-sharing.</p>
+      <button>Find out more</button>
+    </div>
+  </article>
+  <article class="card">
+    <img src="images/creative.jpg" alt="Sample photo">
+    <div class="text">
+      <h3>Creative Arts, Design </h3>
+      <p>Design the way you want to live, and enjoy a creative career that keeps you on your toes</p>
+      <button>Find out more</button>
+    </div>
+  </article>
+  <article class="card">
+    <img src="images/it.jpg" alt="Sample photo">
+    <div class="text">
+      <h3>Information Technology</h3>
+      <p>Be part of the IT revolution and develop systems that improve lives and make the world more connected.</p>
+      <button>Find out more</button>
+    </div>
+  </article>
+  <article class="card">
+    <img src="images/law.jpg" alt="Sample photo">
+    <div class="text">
+      <h3>Law</h3>
+      <p>Develop your analytical skills and help people defend their rights as a lawyer</p>
+      <button>Find out more</button>
+    </div>
+  </article>
+  <article class="card">
+    <img src="images/business.jpg" alt="Sample photo">
+    <div class="text">
+      <h3>Business, Commerce and Management</h3>
+      <p>Become a leader of the future with the skills you need to graduate job-ready to manage any industry</p>
+      <button>Find out more</button>
+    </div>
+  </article>
+  <article class="card">
+    <img src="images/arts.jpg" alt="Sample photo">
+    <div class="text">
+      <h3>Arts, Humanities and Social Sciences</h3>
+      <p>Learn about the world and how it works, and develop advanced thinking skills that’ll give you a strong foundation for a huge range of careers</p>
+      <button>Find out more</button>
+    </div>
+  </article>
+  <article class="card">
+    <img src="images/doctor.jpg" alt="Sample photo">
+    <div class="text">
+      <h3>Medicine</h3>
+      <p>As a doctor, you could have an exciting career saving lives and helping people stay healthy all over the globe</p>
+      <button>Find out more</button>
+    </div>
+  </article>
+</main>
+</div>
+
+      <section class="student">
+        <div class="container">
+          <h1>Clients</h1>
+          <p class="text-center">This is what our client feels like</p>
+          <div class="row">
+            <div class="col-md-4 text-center">
+              <div class="profile">
+                <img src="images/ramesh.jpg" class="user">
+                <blockquote>
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis quis cumque sunt assumenda! Molestiae, sequi cumque natus, pariatur unde laboriosam sint laudantium officiis recusandae.
+                </blockquote>
+                <h3>Ramesh Poudel <span>Co-founder at XYZ</span></h3>
+              </div>
+          </div>
+          <div class="col-md-4 text-center">
+              <div class="profile"> 
+                <img src="images/avin.jpg" class="user">
+                <blockquote>
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis quis cumque sunt assumenda! Molestiae, sequi cumque natus, pariatur unde laboriosam sint laudantium officiis recusandae.
+                </blockquote>
+                <h3>Avin Amatya <span>Co-founder at XYZ</span></h3>
+              </div>
+          </div>
+          <div class="col-md-4 text-center">
+              <div class="profile">
+                <img src="images/ghising.jpg" class="user">
+                <blockquote>
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis quis cumque sunt assumenda! Molestiae, sequi cumque natus, pariatur unde laboriosam sint laudantium officiis recusandae.
+                </blockquote>
+                <h3>Saroj Ghising <span>Co-founder at XYZ</span></h3>
+              </div>
+          </div>
+
+        </div>
+      </section>
+
+<!--footer-->
+<!-- Footer -->
+<footer class="page-footer font-small stylish-color-dark pt-4">
+
+  <!-- Footer Links -->
+  <div class="container text-center text-md-left">
+
+    <!-- Grid row -->
+    <div class="row">
+
+      <!-- Grid column -->
+      <div class="col-md-4 mx-auto">
+
+        <!-- Content -->
+        <h2 class="font-weight-bold text-uppercase mt-3 mb-4">Connect with us</h2>
+        <p>Get in touch with us today</p>
+
+      </div>
+      <!-- Grid column -->
+
+      <hr class="clearfix w-100 d-md-none">
+
+      <!-- Grid column -->
+      <div class="col-md-2 mx-auto">
+
+        <!-- Links -->
+        <h5 class="font-weight-bold text-uppercase mt-3 mb-4">About us</h5>
+
+        <ul class="list-unstyled">
+          <li>
+            <a href="#!">About</a>
+          </li>
+          <li>
+            <a href="#!">Contact us</a>
+          </li>
+          <li>
+        </ul>
+
+      </div>
+      <!-- Grid column -->
+
+      <hr class="clearfix w-100 d-md-none">
+
+      <!-- Grid column -->
+      <div class="col-md-2 mx-auto">
+
+        <!-- Links -->
+        <h5 class="font-weight-bold text-uppercase mt-3 mb-4">Courses</h5>
+
+        <ul class="list-unstyled">
+          <li>
+            <a href="#!">Popular Courses</a>
+          </li>
+          <li>
+            <a href="#!">Article</a>
+          </li>
+          <li>
+        </ul>
+
+      </div>
+      <!-- Grid column -->
+
+      <hr class="clearfix w-100 d-md-none">
+
+      <!-- Grid column -->
+      <div class="col-md-2 mx-auto">
+
+        <!-- Links -->
+        <h5 class="font-weight-bold text-uppercase mt-3 mb-4">Services</h5>
+
+        <ul class="list-unstyled">
+          <li>
+            <a href="#!">Student Services</a>
+          </li>
+          <li>
+            <a href="#!">Enquiry</a>
+          </li>
+          <li>
+
+      </div>
+      <!-- Grid column -->
+
+    </div>
+    <!-- Grid row -->
+
+  </div>
+  <!-- Footer Links -->
+
+  <hr>
+
+<!-- Call to action -->
+  <ul class="list-unstyled list-inline text-center py-2">
+    <li class="list-inline-item">
+      <h5 class="mb-1">Connect with us now!</h5>
+    </li>
+    <li class="list-inline-item">
+      <a href="#!" class="btn btn-danger btn-rounded">Enquiry Now!</a>
+    </li>
+  </ul>
+  <!-- Call to action -->
+
+  <hr>
+
+  <!-- Social buttons -->
+  <ul class="list-unstyled list-inline text-center">
+    <li class="list-inline-item">
+      <a class="btn-floating btn-fb mx-1">
+        <i class="fab fa-facebook-f"> </i>
+      </a>
+    </li>
+    <li class="list-inline-item">
+      <a class="btn-floating btn-tw mx-1">
+        <i class="fab fa-twitter"> </i>
+      </a>
+    </li>
+    <li class="list-inline-item">
+      <a class="btn-floating btn-gplus mx-1">
+        <i class="fab fa-google-plus-g"> </i>
+      </a>
+    </li>
+    <li class="list-inline-item">
+      <a class="btn-floating btn-li mx-1">
+        <i class="fab fa-linkedin-in"> </i>
+      </a>
+    </li>
+    <li class="list-inline-item">
+      <a class="btn-floating btn-dribbble mx-1">
+        <i class="fab fa-dribbble"> </i>
+      </a>
+    </li>
+  </ul>
+  <!-- Social buttons -->
+
+  <!-- Copyright -->
+  <div class="footer-copyright text-center">© 2019 Copyright:
+    <a href="#"> consultancy.com</a>
+  </div>
+  <!-- Copyright -->
+
+</footer>
+<!-- Footer -->
+</body>
+</html>
